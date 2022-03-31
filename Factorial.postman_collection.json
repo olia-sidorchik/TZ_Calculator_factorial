@@ -14,7 +14,7 @@
 						"exec": [
 							"//1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -23,14 +23,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -38,8 +36,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })",
 							"",
 							"",
 							""
@@ -84,7 +82,7 @@
 						"exec": [
 							"//1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -93,14 +91,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -108,9 +104,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
-							""
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })"
 						],
 						"type": "text/javascript"
 					}
@@ -145,9 +140,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"//1) Статус код 200",
+							"///1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -156,14 +151,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -171,9 +164,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
-							""
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })"
 						],
 						"type": "text/javascript"
 					}
@@ -210,7 +202,7 @@
 						"exec": [
 							"//1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -219,14 +211,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -234,9 +224,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
-							""
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })"
 						],
 						"type": "text/javascript"
 					}
@@ -273,7 +262,7 @@
 						"exec": [
 							"//1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -282,14 +271,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -297,11 +284,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
-							"",
-							" ",
-							""
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })"
 						],
 						"type": "text/javascript"
 					}
@@ -338,7 +322,7 @@
 						"exec": [
 							"//1) Статус код 200",
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(200)",
 							"});",
 							"",
 							"//2) Правильность расчета факториала",
@@ -347,14 +331,12 @@
 							"let n=jsonReq.number;",
 							"let result=1;",
 							"for (let i = 1; i <= n; i++) {result = result * i}; ",
-							"console.log(result)",
-							"",
+							"console.log(result);",
 							"pm.test(\"Right factorial response\", function() {",
 							"    pm.expect(jsonResp.answer).to.equal(result)",
-							"})",
+							"});",
 							"",
 							"//3) Проверка структуры json ответа",
-							"",
 							"let schema={",
 							"\"type\":\"object\",",
 							"           \"properties\": {\"answer\":{\"type\":\"number\"}},",
@@ -362,9 +344,8 @@
 							"};",
 							"   ",
 							"pm.test(\"Schema is valid\",function ()",
-							" {pm.response.to.have.jsonSchema(schema);",
-							" });",
-							""
+							" {pm.response.to.have.jsonSchema(schema)",
+							" })"
 						],
 						"type": "text/javascript"
 					}
@@ -400,8 +381,8 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Status code is 405 not allowed\", function () {",
-							"    pm.response.to.have.status(405);",
-							"});"
+							"    pm.response.to.have.status(405)",
+							"})"
 						],
 						"type": "text/javascript"
 					}
@@ -438,8 +419,8 @@
 						"exec": [
 							"//1) Статус код 400",
 							"pm.test(\"Status code is 400\", function () {",
-							"    pm.response.to.have.status(400);",
-							"});",
+							"    pm.response.to.have.status(400)",
+							"})",
 							"",
 							""
 						],
@@ -478,8 +459,8 @@
 						"exec": [
 							"//1) Статус код 400",
 							"pm.test(\"Status code is 400\", function () {",
-							"    pm.response.to.have.status(400);",
-							"});",
+							"    pm.response.to.have.status(400)",
+							"})",
 							""
 						],
 						"type": "text/javascript"
@@ -517,8 +498,8 @@
 						"exec": [
 							"//1) Статус код 400",
 							"pm.test(\"Status code is 400\", function () {",
-							"    pm.response.to.have.status(400);",
-							"});",
+							"    pm.response.to.have.status(400)",
+							"})",
 							""
 						],
 						"type": "text/javascript"
@@ -556,8 +537,8 @@
 						"exec": [
 							"//1) Статус код 400",
 							"pm.test(\"Status code is 400\", function () {",
-							"    pm.response.to.have.status(400);",
-							"});",
+							"    pm.response.to.have.status(400)",
+							"})",
 							""
 						],
 						"type": "text/javascript"
